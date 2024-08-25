@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 32px;
+}
+
+.headerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.ellipse {
+  width: 60.291px;
+  height: 60.291px;
+}
+.heading {
+  color: var(--Dark, #3c3030);
+  font-family: "Iowan Old Style";
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.hr-line {
+  background: #3c3030;
+  height: 1px;
+}
