@@ -81,12 +81,12 @@ input::placeholder {
 .newsContentContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .newsContentBox {
   min-height: 1334px;
   width: 1600px;
-  border: 1px solid black;
 }
 
 .TopNewsContent {
@@ -104,12 +104,12 @@ input::placeholder {
 .newsContent {
   width: 450px;
   height: 600px;
-  border: 1px solid black;
 }
 
 .newsGridContainer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .newsRow {
@@ -117,6 +117,7 @@ input::placeholder {
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 96px;
+  flex-wrap: wrap;
 }
 
 .newsContent > img {
@@ -166,8 +167,35 @@ input::placeholder {
 
 .refArrow {
   width: 30px;
-  height: 20px;
+  height: 30px;
   color: #e84848;
   margin-left: 15px;
   text-decoration: underline;
+  border-bottom: 3px solid;
+}
+/* 
+Mobile View */
+@media (max-width: 480px) {
+  .newsContentContainer {
+    width: 430px;
+    padding-left: 20px;
+    padding-right: auto;
+  }
+  .newsGridContainer {
+    width: 420px;
+  }
+
+  .newsRow {
+    width: 400px;
+  }
+
+  .newsContent {
+    width: 400px;
+    height: 600px;
+  }
+
+  .newsContent > img {
+    width: 399px;
+    height: 220px;
+  }
 }

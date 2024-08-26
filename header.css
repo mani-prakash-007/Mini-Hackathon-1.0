@@ -30,3 +30,25 @@ header {
   background: #3c3030;
   height: 1px;
 }
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .headerBox {
+    margin-bottom: 16px;
+  }
+
+  .ellipse {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heading {
+    font-size: 36px;
+    text-align: center;
+    line-height: 120%;
+  }
+
+  .hr-line {
+    width: 100%;
+  }
+}
